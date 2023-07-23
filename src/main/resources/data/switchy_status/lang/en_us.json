@@ -1,0 +1,16 @@
+{
+  "switchy.status.module.health.description": "A module that switches player health.",
+  "switchy.status.module.health.enabled": "You will have separate health per-preset.",
+  "switchy.status.module.health.disabled": "You will share health across all presets.",
+  "switchy.status.module.health.warning": "All health data saved on other profiles will be cleared!",
+
+  "switchy.status.module.hunger.description": "A module that switches player hunger.",
+  "switchy.status.module.hunger.enabled": "You will have separate hunger per-preset.",
+  "switchy.status.module.hunger.disabled": "You will share hunger across all presets.",
+  "switchy.status.module.hunger.warning": "All hunger data saved on other profiles will be cleared!",
+
+  "switchy.status.module.status_effects.description": "A module that switches player status effects.",
+  "switchy.status.module.status_effects.enabled": "You will have separate status effects per-preset.",
+  "switchy.status.module.status_effects.disabled": "You will share status effects across all presets.",
+  "switchy.status.module.status_effects.warning": "All status effects saved on other profiles will be cleared!"
+}

@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.dmunozv04.switchy_status.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "HungerManagerAccessor"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

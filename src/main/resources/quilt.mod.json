@@ -1,0 +1,51 @@
+{
+	"schema_version": 1,
+	"quilt_loader": {
+		"group": "com.dmunozv04",
+		"id": "switchy-status",
+		"version": "${version}",
+		"metadata": {
+			"name": "Switchy Status",
+			"description": "-----",
+			"contributors": {
+				"dmunozv04": "Owner"
+			},
+			"contact": {
+				"homepage": "https://modrinth.com/mod/switchy-status",
+				"issues": "https://github.com/dmunozv04/switchy-status/issues",
+				"sources": "https://github.com/dmunozv04/switchy-status"
+			},
+			"icon": "assets/switchy_proxy/icon.png"
+		},
+		"intermediate_mappings": "net.fabricmc:intermediary",
+		"entrypoints": {
+			"events": [
+				"com.dmunozv04.switchy_status.SwitchyStatus",
+				"com.dmunozv04.switchy_status.modules.HealthModule",
+				"com.dmunozv04.switchy_status.modules.HungerModule",
+				"com.dmunozv04.switchy_status.modules.StatusEffectsModule"
+			],
+			"client_events": [
+			]
+		},
+		"depends": [
+			{
+				"id": "minecraft",
+				"versions": ">=${mc}"
+			},
+			{
+				"id": "quilt_loader",
+				"versions": ">=${ql}"
+			},
+			{
+				"id": "switchy-ui",
+				"versions": ">=${switchy}"
+			},
+			{
+				"id": "switchy-compat",
+				"versions": ">=${switchy}"
+			}
+		]
+	},
+	"mixin": "switchy-status.mixins.json"
+}
