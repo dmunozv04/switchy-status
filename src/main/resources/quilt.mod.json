@@ -6,7 +6,7 @@
 		"version": "${version}",
 		"metadata": {
 			"name": "Switchy Status",
-			"description": "-----",
+			"description": "A switchy addon for health, hunger and status effects",
 			"contributors": {
 				"dmunozv04": "Owner"
 			},
@@ -15,17 +15,17 @@
 				"issues": "https://github.com/dmunozv04/switchy-status/issues",
 				"sources": "https://github.com/dmunozv04/switchy-status"
 			},
-			"icon": "assets/switchy_proxy/icon.png"
+			"icon": "assets/switchy_status/icon.png"
 		},
 		"intermediate_mappings": "net.fabricmc:intermediary",
 		"entrypoints": {
-			"events": [
+			"switchy": [
 				"com.dmunozv04.switchy_status.SwitchyStatus",
 				"com.dmunozv04.switchy_status.modules.HealthModule",
 				"com.dmunozv04.switchy_status.modules.HungerModule",
 				"com.dmunozv04.switchy_status.modules.StatusEffectsModule"
 			],
-			"client_events": [
+			"switchy_client": [
 			]
 		},
 		"depends": [

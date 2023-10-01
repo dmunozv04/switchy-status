@@ -39,3 +39,8 @@ jobs:
           java: 17
 
           modrinth-featured: true
+          modrinth-unfeature-mode: subset
+          loaders: |
+            fabric
+            forge
+            quilt

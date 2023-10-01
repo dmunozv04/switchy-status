@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "switchy-status",
+  "version": "${version}",
+  "name": "Switchy Status",
+  "description": "A switchy addon for health, hunger and status effects",
+  "authors": [
+    "dmunozv04"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/switchy-status",
+    "issues": "https://github.com/dmunozv04/switchy-status/issues",
+    "sources": "https://github.com/dmunozv04/switchy-status"
+  },
+  "icon": "assets/switchy_status/icon.png",
+  "license": "LGPL-3.0-only",
+  "environment": "*",
+  "entrypoints": {
+    "switchy": [
+      "com.dmunozv04.switchy_status.SwitchyStatus",
+      "com.dmunozv04.switchy_status.modules.HealthModule",
+      "com.dmunozv04.switchy_status.modules.HungerModule",
+      "com.dmunozv04.switchy_status.modules.StatusEffectsModule"
+    ],
+    "switchy_client": [
+    ]
+  },
+  "depends": {
+    "minecraft": ">=${mc}",
+    "fabricloader": ">=${fl}",
+    "fabric": ">=${fapi}",
+    "switchy-cardinal": ">=${switchy}",
+    "switchy-ui": ">=${switchy}"
+  },
+  "mixins": [
+    "switchy-status.mixins.json"
+  ]
+}
